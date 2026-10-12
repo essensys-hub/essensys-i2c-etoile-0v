@@ -1,0 +1,6 @@
+*.kicad_prl
+*-backups/
+fp-info-cache
+_autosave-*
+!export/n2-etoile-0v-gerber.zip
+.DS_Store

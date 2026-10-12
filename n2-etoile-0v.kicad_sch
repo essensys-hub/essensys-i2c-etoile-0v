@@ -1,0 +1,4029 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid e8210b32-0ed0-5305-8c54-9be0e951fed1)
+	(paper "A3")
+	(title_block
+		(title "N2 étoile 0 V")
+		(date "2026-10-12")
+		(rev "A")
+		(company "Essensys – essensys-i2c-etoile-0v")
+		(comment 1 "Feature: i2c-surge-protection-2026-10-007 – Refs #1")
+		(comment 2 "Brochage WR-MPC3 : 1 SDA, 2 SCL, 3 0 V, 4 +15 V")
+	)
+	(lib_symbols
+		(symbol
+			"Connector_Generic:Conn_02x02_Odd_Even"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property
+				"Reference"
+				"J"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Value"
+				"Conn_02x02_Odd_Even"
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Footprint"
+				""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Datasheet"
+				"~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Description"
+				"Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_keywords"
+				"connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_fp_filters"
+				"Connector*:*_2x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol
+				"Conn_02x02_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name
+						"Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name
+						"Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name
+						"Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name
+						"Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol
+			"Connector_Generic:Conn_02x03_Odd_Even"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property
+				"Reference"
+				"J"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Value"
+				"Conn_02x03_Odd_Even"
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Footprint"
+				""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Datasheet"
+				"~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Description"
+				"Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_keywords"
+				"connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_fp_filters"
+				"Connector*:*_2x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol
+				"Conn_02x03_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name
+						"Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name
+						"Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name
+						"Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name
+						"Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name
+						"Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name
+						"Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol
+			"Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property
+				"Reference"
+				"J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Value"
+				"Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Footprint"
+				""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Datasheet"
+				"~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Description"
+				"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_keywords"
+				"connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_fp_filters"
+				"Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol
+				"Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name
+						"Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol
+			"Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property
+				"Reference"
+				"F"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Value"
+				"Polyfuse"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Footprint"
+				""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property
+				"Datasheet"
+				"~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Description"
+				"Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_keywords"
+				"resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_fp_filters"
+				"*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol
+				"Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54)
+						(xy -1.524 1.524)
+						(xy 1.524 -1.524)
+						(xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol
+				"Polyfuse_1_1"
+				(pin
+					passive
+					line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name
+						"~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name
+						"~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol
+			"Diode:SMAJ16A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property
+				"Reference"
+				"D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Value"
+				"SMAJ16A"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property
+				"Footprint"
+				"Diode_SMD:D_SMA"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Datasheet"
+				"https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"Description"
+				"400W unidirectional Transient Voltage Suppressor, 16.0Vr, SMA(DO-214AC)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_keywords"
+				"unidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property
+				"ki_fp_filters"
+				"D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol
+				"SMAJ16A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27)
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27)
+						(xy -1.27 0)
+						(xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol
+				"SMAJ16A_1_1"
+				(pin
+					passive
+					line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name
+						"A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin
+					passive
+					line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name
+						"A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 40.64 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 4201c298-9372-5443-bc94-99c5c3e72ef9)
+		(property
+			"Reference"
+			"J1"
+			(at 40.64 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BP J31 (WR-MPC3 2x2)"
+			(at 40.64 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid d5b077aa-f4b8-57a4-8293-08baf21a1bdd)
+		)
+		(pin
+			"3"
+			(uuid 571c36d8-1734-5802-8e3c-6c06063ed1c8)
+		)
+		(pin
+			"2"
+			(uuid 6f928512-19bd-5dea-840d-00973047bb35)
+		)
+		(pin
+			"4"
+			(uuid f854786e-5040-5357-a81b-0a35ad7f7d92)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 63.5)
+			(xy 33.02 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 34b53701-5f60-5278-870b-89f0e3ab8296)
+	)
+	(label
+		"SDA_BP"
+		(at 33.02 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid efbdeeff-cd70-5ed1-aaa7-8e9334ec98f4)
+	)
+	(wire
+		(pts
+			(xy 48.26 63.5)
+			(xy 50.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 944de0e2-f2a6-5789-9f7c-1b6061955720)
+	)
+	(label
+		"SCL_BP"
+		(at 50.8 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid bce02e87-6127-559c-bed1-143ec2305b09)
+	)
+	(wire
+		(pts
+			(xy 35.56 66.04)
+			(xy 33.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid fb36b492-c3cc-57a2-8d82-ac07373e2c20)
+	)
+	(label
+		"0V"
+		(at 33.02 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 0551ac0e-3ba0-5bd1-b1f6-fc3bca69bd7e)
+	)
+	(wire
+		(pts
+			(xy 48.26 66.04)
+			(xy 50.8 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid e88b848b-3bb6-5d8a-8da6-ee3cfc3f3d15)
+	)
+	(label
+		"+15V_BP"
+		(at 50.8 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 8ba3432c-285e-5da3-b546-97703af91ddb)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 40.64 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid 505609d2-b2d4-5cd1-b7ba-45cd106f3440)
+		(property
+			"Reference"
+			"J8"
+			(at 40.64 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"Queue de cochon AWG20 -> J31-3 du BP"
+			(at 40.64 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Wire:SolderWire-0.75sqmm_1x01_D1.25mm_OD3.5mm"
+			(at 40.64 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 40.64 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Note"
+			"Pastille de soudure, pas de composant"
+			(at 40.64 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 61190b03-9453-52de-8af2-53fbf53ef34e)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 96.52)
+			(xy 33.02 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid ffbc66a2-22cd-549d-86a8-2a03a56856af)
+	)
+	(label
+		"0V"
+		(at 33.02 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 350f5852-4a04-5f57-89b8-6abb5eb992a0)
+	)
+	(text
+		"ENTRÉE BP (J31)\nBrochage : 1 SDA, 2 SCL, 3 0 V, 4 +15 V"
+		(exclude_from_sim no)
+		(at 25.4 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 8996ab1e-322f-5930-966c-bfbb46362760)
+	)
+	(text
+		"Queue de cochon AWG20 <= 15 cm\nsoudée sur la broche traversante J31-3 du BP\n« 0 V TBTS – NE PAS RELIER À LA TERRE »"
+		(exclude_from_sim no)
+		(at 25.4 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 217e6ac1-5483-546e-a8a7-87c12ff66ab3)
+	)
+	(text
+		"PORT BA1 : SC940D (J1 et J2 du BA)"
+		(exclude_from_sim no)
+		(at 93.98 38.1 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid 6b716a28-bde2-5f6f-a330-b39785b0bfdb)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+		(at 101.6 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 0eb6e3bf-e802-5e14-805a-67eae6398d51)
+		(property
+			"Reference"
+			"JP1"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"Cavalier port BA1 (3 shunts)"
+			(at 101.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Note"
+			"Retirer les 3 shunts (ou le pont 2x3) = BA isolé du bus, 0 V conservé"
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 29ee7dd9-a561-521b-a902-1a4b6731d4c4)
+		)
+		(pin
+			"3"
+			(uuid 60459324-b9ee-552a-8b57-a6e31c3512e3)
+		)
+		(pin
+			"5"
+			(uuid a2a665d5-1f9f-5cbe-aa21-6d2bd0344400)
+		)
+		(pin
+			"2"
+			(uuid 42e1b37c-9ddf-58c6-87c2-d5659e58a45e)
+		)
+		(pin
+			"4"
+			(uuid 7ebd8854-bd50-5e93-b2b8-1756f18c7d67)
+		)
+		(pin
+			"6"
+			(uuid 8a7d6355-0f03-584f-8c42-1c0e16f048fa)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 96.52 55.88)
+			(xy 93.98 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid eb89b1f0-6c42-5242-a7ec-d40373f41183)
+	)
+	(label
+		"SDA_BP"
+		(at 93.98 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid f05e79a7-77b0-581e-9324-fd32cc242470)
+	)
+	(wire
+		(pts
+			(xy 109.22 55.88)
+			(xy 111.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 7209b015-822b-58d1-a297-3ce7fd64639d)
+	)
+	(label
+		"SDA_BA1"
+		(at 111.76 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid a1d29746-aca6-58a4-917a-f662bba1ebc8)
+	)
+	(wire
+		(pts
+			(xy 96.52 58.42)
+			(xy 93.98 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 9686fd82-b815-5e7f-9208-cb7f0c4ca877)
+	)
+	(label
+		"SCL_BP"
+		(at 93.98 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid c96a01fa-b8e9-5853-ad2c-68770edf9003)
+	)
+	(wire
+		(pts
+			(xy 109.22 58.42)
+			(xy 111.76 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 7cd8ba47-8e9f-51fc-83c1-670fea0f6a1b)
+	)
+	(label
+		"SCL_BA1"
+		(at 111.76 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 0c8724b1-f631-5283-8493-b71c070e5ef1)
+	)
+	(wire
+		(pts
+			(xy 96.52 60.96)
+			(xy 93.98 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid f1954671-1c65-5b0d-9369-a2135eb2a199)
+	)
+	(label
+		"+15V_BP"
+		(at 93.98 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 1767af03-3c14-5623-9c35-6f145b74bab3)
+	)
+	(wire
+		(pts
+			(xy 109.22 60.96)
+			(xy 111.76 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid ffbedbc0-d8b1-5930-a099-13b0380b52f5)
+	)
+	(label
+		"+15V_SW1"
+		(at 111.76 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 5a33ca67-e393-5397-8e7c-16b6568f7aed)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 142.24 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid cc96249a-9463-5cb4-8621-66923b7400a0)
+		(property
+			"Reference"
+			"F1"
+			(at 144.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Value"
+			"PTC >=30 V 1812"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Footprint"
+			"Fuse:Fuse_1812_4532Metric"
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"1812L050/30MR (à confirmer : Ihold@50°C >= 1,5 x I BA_ALIM)"
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 3a775d02-68a3-5720-a576-902a3dddd428)
+		)
+		(pin
+			"2"
+			(uuid 964c876d-4095-5604-9a97-7176d1885d74)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 142.24 59.69)
+			(xy 142.24 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 2320c01d-b4ad-5ed4-8b4a-3cc13363c9eb)
+	)
+	(label
+		"+15V_SW1"
+		(at 142.24 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 38a9b513-ab6f-51cf-855b-7204ddbb0c87)
+	)
+	(wire
+		(pts
+			(xy 142.24 67.31)
+			(xy 142.24 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 62e62d1a-3e5e-50d5-ab67-26327539e132)
+	)
+	(label
+		"+15V_BA1"
+		(at 142.24 69.85 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 3738ff32-70d0-59c6-b308-b501cd65edcb)
+	)
+	(symbol
+		(lib_id "Diode:SMAJ16A")
+		(at 142.24 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 89aefd68-e8ee-5e62-a6cd-3f33a48160bd)
+		(property
+			"Reference"
+			"D1"
+			(at 142.24 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"SMAJ16A"
+			(at 142.24 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Diode_SMD:D_SMA"
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"SMAJ16A"
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 611bd039-8974-57d7-971d-4d314c6ff3d6)
+		)
+		(pin
+			"2"
+			(uuid f442f564-71cd-5b81-b08b-f2b4e2362c32)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 138.43 88.9)
+			(xy 135.89 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 9073ad0b-4a14-5f4b-ac6c-363b0ea67f4e)
+	)
+	(label
+		"+15V_BA1"
+		(at 135.89 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 9ec2d3c4-f9c0-5db1-8aa5-a0153e269228)
+	)
+	(wire
+		(pts
+			(xy 146.05 88.9)
+			(xy 148.59 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 8680295f-007c-586d-b417-835ba420c02c)
+	)
+	(label
+		"0V"
+		(at 148.59 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid a35ac3cd-100e-5015-9351-f994a43c20e7)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 101.6 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 8f8e9558-f91b-5123-85f9-d4c6eddf37c1)
+		(property
+			"Reference"
+			"J2"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA1 J1 (WR-MPC3 2x2)"
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 101.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 101.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 101.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 101.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid e8974141-84eb-50bd-9ef6-c49419f9d00d)
+		)
+		(pin
+			"3"
+			(uuid 132a6ee3-e9c9-5485-8f87-2a8a5149de0f)
+		)
+		(pin
+			"2"
+			(uuid b954ef7e-bc40-5de2-a9d1-5fd2a715742f)
+		)
+		(pin
+			"4"
+			(uuid dab5371a-ec4a-562f-90e3-fa91791b47c2)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 96.52 111.76)
+			(xy 93.98 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid d4b5372b-0de8-5c1d-bae5-b62f645bf078)
+	)
+	(label
+		"SDA_BA1"
+		(at 93.98 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 08250c1c-a33c-53d6-9965-a7d6d993dae0)
+	)
+	(wire
+		(pts
+			(xy 109.22 111.76)
+			(xy 111.76 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 027b1b98-b5c8-5f84-aa3d-2ca1a8ae6853)
+	)
+	(label
+		"SCL_BA1"
+		(at 111.76 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 345e1bfa-1339-547f-b73a-19fb0c79f4f0)
+	)
+	(wire
+		(pts
+			(xy 96.52 114.3)
+			(xy 93.98 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 80914a37-65bd-54d8-855c-af3cbaa9ef07)
+	)
+	(label
+		"0V"
+		(at 93.98 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 8cf54d91-2fdf-5822-948f-722dd7430bda)
+	)
+	(wire
+		(pts
+			(xy 109.22 114.3)
+			(xy 111.76 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid a258f78a-be17-5a8c-b616-69f473203ec0)
+	)
+	(label
+		"+15V_BA1"
+		(at 111.76 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 93dd073d-28c7-5655-b38a-e2363fd26505)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 149.86 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 1add46ed-d199-541d-b215-fe09c725deea)
+		(property
+			"Reference"
+			"J3"
+			(at 149.86 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA1 J2 (WR-MPC3 2x2)"
+			(at 149.86 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid e93a1d5d-cedf-5f5e-a47c-97764c9a4693)
+		)
+		(pin
+			"3"
+			(uuid 5711101d-0ed9-5f7d-a98d-24885f01df5a)
+		)
+		(pin
+			"2"
+			(uuid df8dce0b-f8e9-50df-9f1a-5e18758608fb)
+		)
+		(pin
+			"4"
+			(uuid f04de0c7-be73-5899-9bde-8c7d0a4a7181)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 144.78 111.76)
+			(xy 142.24 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 127f5d00-9d4b-570a-ab62-80bdd194ea26)
+	)
+	(label
+		"SDA_BA1"
+		(at 142.24 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 0747981c-5a49-5db1-8ef4-e818fe947787)
+	)
+	(wire
+		(pts
+			(xy 157.48 111.76)
+			(xy 160.02 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 72e075fc-7a11-5bb1-8938-6fb89905a1cc)
+	)
+	(label
+		"SCL_BA1"
+		(at 160.02 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 69996dad-983b-5bc9-945d-bc70822650cf)
+	)
+	(wire
+		(pts
+			(xy 144.78 114.3)
+			(xy 142.24 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid bb42b1d9-e23c-50a6-b004-076849ba427c)
+	)
+	(label
+		"0V"
+		(at 142.24 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 6ae7008d-8f0d-5b91-aece-10dd4fd571e7)
+	)
+	(wire
+		(pts
+			(xy 157.48 114.3)
+			(xy 160.02 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 2a3e1114-4aaf-57b2-b6e9-d436a189a8f4)
+	)
+	(label
+		"+15V_BA1"
+		(at 160.02 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 729a875c-899f-57f4-8ea5-82be70fc1dd3)
+	)
+	(text
+		"PORT BA2 : SC941C (J1 et J2 du BA)"
+		(exclude_from_sim no)
+		(at 195.58 38.1 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid 3f156eae-99b3-5259-b97c-9aa6ca96060b)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+		(at 203.2 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid efd0cec6-2b26-5535-9e53-d44a94bcaa72)
+		(property
+			"Reference"
+			"JP2"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"Cavalier port BA2 (3 shunts)"
+			(at 203.2 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+			(at 203.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 203.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Note"
+			"Retirer les 3 shunts (ou le pont 2x3) = BA isolé du bus, 0 V conservé"
+			(at 203.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid e8d5afe4-097a-542f-ac37-a3c31076147f)
+		)
+		(pin
+			"3"
+			(uuid 9607af31-6797-561c-ab0b-d8f5a498bb3a)
+		)
+		(pin
+			"5"
+			(uuid c90f37a8-832c-5d9b-ac43-6134a88d04c2)
+		)
+		(pin
+			"2"
+			(uuid f41daed7-fca9-5075-8e16-5d208e984842)
+		)
+		(pin
+			"4"
+			(uuid 0a5214ef-12f5-5d6d-8565-6167a5c3070f)
+		)
+		(pin
+			"6"
+			(uuid 1c6b5fc3-995b-59f7-ab69-3c92228264bb)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 198.12 55.88)
+			(xy 195.58 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 4c2e3555-ecfc-51e5-8681-ef935a6106ae)
+	)
+	(label
+		"SDA_BP"
+		(at 195.58 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 6f0320f3-48eb-58dc-9529-27992bf8c4bd)
+	)
+	(wire
+		(pts
+			(xy 210.82 55.88)
+			(xy 213.36 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 838a8237-308c-5683-857e-064f60b8e128)
+	)
+	(label
+		"SDA_BA2"
+		(at 213.36 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 4fd494b9-caf9-58e2-96ed-382c39e5d1e2)
+	)
+	(wire
+		(pts
+			(xy 198.12 58.42)
+			(xy 195.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 0da6406b-7e18-5d32-af90-b9994defa619)
+	)
+	(label
+		"SCL_BP"
+		(at 195.58 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 9d4a44c1-b7ad-575c-9141-ea9fefc821ef)
+	)
+	(wire
+		(pts
+			(xy 210.82 58.42)
+			(xy 213.36 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 52d11201-a844-566f-bb13-81d2c028ca81)
+	)
+	(label
+		"SCL_BA2"
+		(at 213.36 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 9bb002bb-8bb5-5345-9318-1556918bffc3)
+	)
+	(wire
+		(pts
+			(xy 198.12 60.96)
+			(xy 195.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 3ee7651d-78ad-51a4-8d63-cb0f392ebc36)
+	)
+	(label
+		"+15V_BP"
+		(at 195.58 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid e09b9f15-189c-5735-9e11-18c8c584ae33)
+	)
+	(wire
+		(pts
+			(xy 210.82 60.96)
+			(xy 213.36 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 0c317c54-5770-5563-8b03-9f34c0a4a77b)
+	)
+	(label
+		"+15V_SW2"
+		(at 213.36 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 43da2078-2415-5318-b615-d2a1fabeb79b)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 243.84 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid c7908c28-aab9-5542-9e7a-bc425e3354fd)
+		(property
+			"Reference"
+			"F2"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Value"
+			"PTC >=30 V 1812"
+			(at 246.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Footprint"
+			"Fuse:Fuse_1812_4532Metric"
+			(at 243.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 243.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 243.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"1812L050/30MR (à confirmer : Ihold@50°C >= 1,5 x I BA_ALIM)"
+			(at 243.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 1adc4d48-4a18-5cff-aa41-ed94c4e5446b)
+		)
+		(pin
+			"2"
+			(uuid 6b8529af-3737-5cd7-95e4-0d30f33183c2)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 243.84 59.69)
+			(xy 243.84 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid fafb4adc-4041-5e5c-8ddb-9509df101c37)
+	)
+	(label
+		"+15V_SW2"
+		(at 243.84 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid f799313a-f5af-5eaa-93e1-92383010e584)
+	)
+	(wire
+		(pts
+			(xy 243.84 67.31)
+			(xy 243.84 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 5af7f26f-aaaf-5e8f-aa0d-42ed06a34eca)
+	)
+	(label
+		"+15V_BA2"
+		(at 243.84 69.85 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid fa715d94-9ee0-5fe7-b178-fc7dc7d45329)
+	)
+	(symbol
+		(lib_id "Diode:SMAJ16A")
+		(at 243.84 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 9da6f2a0-3e5f-56fd-877a-e73b7e8679e7)
+		(property
+			"Reference"
+			"D2"
+			(at 243.84 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"SMAJ16A"
+			(at 243.84 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Diode_SMD:D_SMA"
+			(at 243.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 243.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 243.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"SMAJ16A"
+			(at 243.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 03d7d1f7-c9ca-57f3-a4ba-fe72945cb3cd)
+		)
+		(pin
+			"2"
+			(uuid 31c05db4-3aae-5fdc-bcdd-13525e84a123)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 240.03 88.9)
+			(xy 237.49 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 8ca6e196-f119-5da2-b30d-102ace593497)
+	)
+	(label
+		"+15V_BA2"
+		(at 237.49 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid a3e76042-93d6-5013-ae23-d044ad26bc3a)
+	)
+	(wire
+		(pts
+			(xy 247.65 88.9)
+			(xy 250.19 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid ba51109a-e59b-5d89-9f10-a660f20bd3f6)
+	)
+	(label
+		"0V"
+		(at 250.19 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 95925e13-f4b2-5c05-a970-a4d29b22302b)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 203.2 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 06f6dc50-97d1-515f-ad14-4266fefddd9b)
+		(property
+			"Reference"
+			"J4"
+			(at 203.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA2 J1 (WR-MPC3 2x2)"
+			(at 203.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 203.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 203.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 203.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 203.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 1cc8b5e8-987d-5352-9874-22c6463379f3)
+		)
+		(pin
+			"3"
+			(uuid 2330931d-94b8-54af-bcc0-4788b1734c52)
+		)
+		(pin
+			"2"
+			(uuid 981262a4-c6da-598b-bae2-b9e8a35ec62c)
+		)
+		(pin
+			"4"
+			(uuid 94c65e02-1ec8-5a7f-aa45-18096e79ccfd)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 198.12 111.76)
+			(xy 195.58 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid bd0109ad-c905-5270-95d8-109a885e7a26)
+	)
+	(label
+		"SDA_BA2"
+		(at 195.58 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 6b747a27-40d4-573a-9f8e-04bb8d00f529)
+	)
+	(wire
+		(pts
+			(xy 210.82 111.76)
+			(xy 213.36 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 178e3486-b4ce-54b2-8963-379b3effcfae)
+	)
+	(label
+		"SCL_BA2"
+		(at 213.36 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 115cc27e-8786-5639-9cd1-e2dbbe6c5fec)
+	)
+	(wire
+		(pts
+			(xy 198.12 114.3)
+			(xy 195.58 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid d4029b88-e4db-5351-8912-787c89e2cc77)
+	)
+	(label
+		"0V"
+		(at 195.58 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid a50b4d43-73e6-54c7-bd4b-6429c5a1c5ba)
+	)
+	(wire
+		(pts
+			(xy 210.82 114.3)
+			(xy 213.36 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 2b4d1d23-99b6-5db3-855e-1e4fb8898422)
+	)
+	(label
+		"+15V_BA2"
+		(at 213.36 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 11dbcd05-64ad-55e0-8b87-53ec847b694f)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 251.46 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 17b5cf09-b841-564b-8edb-d20bec522f8b)
+		(property
+			"Reference"
+			"J5"
+			(at 251.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA2 J2 (WR-MPC3 2x2)"
+			(at 251.46 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 251.46 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 251.46 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 251.46 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 251.46 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 7e24bb13-d8ca-5770-a2d1-d4784616732e)
+		)
+		(pin
+			"3"
+			(uuid 41201429-1efa-5cc2-81b5-8eb4fe19b7da)
+		)
+		(pin
+			"2"
+			(uuid 6e6db9b0-ad63-5a4a-8280-677438e7940b)
+		)
+		(pin
+			"4"
+			(uuid 7b352675-d4c2-5380-8b67-768349c13d23)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 246.38 111.76)
+			(xy 243.84 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 4e88feaf-75cc-5743-b1fd-2b588b4ef17d)
+	)
+	(label
+		"SDA_BA2"
+		(at 243.84 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 9d0bfd72-4daa-54dd-a9e4-25c77bd3ab20)
+	)
+	(wire
+		(pts
+			(xy 259.08 111.76)
+			(xy 261.62 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 86f7d1a1-f9ab-5148-93ff-1d9a221e7d11)
+	)
+	(label
+		"SCL_BA2"
+		(at 261.62 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid b34588cd-6bda-5be8-81e3-ffb83b8e6c8b)
+	)
+	(wire
+		(pts
+			(xy 246.38 114.3)
+			(xy 243.84 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 9641d16b-5eaa-5844-9959-0bdc260fd1f1)
+	)
+	(label
+		"0V"
+		(at 243.84 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 8ad1ab4f-2629-5db3-a087-eb60b04bc71f)
+	)
+	(wire
+		(pts
+			(xy 259.08 114.3)
+			(xy 261.62 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 5b778fa9-6612-56a6-9cf1-00a4707cdcf5)
+	)
+	(label
+		"+15V_BA2"
+		(at 261.62 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid a5a77fcf-7e36-58fe-bd75-67493ea40a61)
+	)
+	(text
+		"PORT BA3 : SC942C (J1 et J2 du BA)"
+		(exclude_from_sim no)
+		(at 297.18 38.1 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid 276f2961-1b35-5563-bc1e-7a5007cb4c21)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+		(at 304.8 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid f001ff9d-4a19-5f06-b04a-3f840ef2a3bd)
+		(property
+			"Reference"
+			"JP3"
+			(at 304.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"Cavalier port BA3 (3 shunts)"
+			(at 304.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+			(at 304.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 304.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Note"
+			"Retirer les 3 shunts (ou le pont 2x3) = BA isolé du bus, 0 V conservé"
+			(at 304.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid c1a3f12e-2dfa-55db-a6bf-3c3f6c31ac69)
+		)
+		(pin
+			"3"
+			(uuid 091adc5e-eb13-59a8-bea8-97dd3083645c)
+		)
+		(pin
+			"5"
+			(uuid 1733d670-91fa-5995-a4b5-df852637acc5)
+		)
+		(pin
+			"2"
+			(uuid d069040c-5b17-5a1b-8f62-ab51407ec87a)
+		)
+		(pin
+			"4"
+			(uuid 06d5ced5-9ac7-5225-936a-286aeb350f37)
+		)
+		(pin
+			"6"
+			(uuid 5ecc7612-0fae-5283-8fc2-192e4668bee8)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "JP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 299.72 55.88)
+			(xy 297.18 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 2e71b5f9-5c5c-55d5-afca-09b672cf6b56)
+	)
+	(label
+		"SDA_BP"
+		(at 297.18 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid cd3a4737-cb2d-57bd-b306-d73b49923f0f)
+	)
+	(wire
+		(pts
+			(xy 312.42 55.88)
+			(xy 314.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid af883d21-825a-52f7-874d-a420eef132bf)
+	)
+	(label
+		"SDA_BA3"
+		(at 314.96 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 28b2192c-04f7-5eb3-bd39-48a7b2b7b1b5)
+	)
+	(wire
+		(pts
+			(xy 299.72 58.42)
+			(xy 297.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 22352488-306c-533f-8d6e-dc408e25b97c)
+	)
+	(label
+		"SCL_BP"
+		(at 297.18 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 76c88b35-51cf-578e-9737-a2729d3ba496)
+	)
+	(wire
+		(pts
+			(xy 312.42 58.42)
+			(xy 314.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 385efa23-c483-547a-b360-9cc86e522316)
+	)
+	(label
+		"SCL_BA3"
+		(at 314.96 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 3d757152-8c63-5095-b88f-bbbb4c16cb6e)
+	)
+	(wire
+		(pts
+			(xy 299.72 60.96)
+			(xy 297.18 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 8dbdc2eb-c804-5eff-a5fd-928bac8ac1a0)
+	)
+	(label
+		"+15V_BP"
+		(at 297.18 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid d1502642-bbbd-5f1d-8474-a77b7d52f13a)
+	)
+	(wire
+		(pts
+			(xy 312.42 60.96)
+			(xy 314.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 4f7d948e-52b1-50ed-9034-c44cb676ccf1)
+	)
+	(label
+		"+15V_SW3"
+		(at 314.96 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid dc6668b4-d105-5606-a7aa-b02fe1b43ae6)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 345.44 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid f0f234e4-a522-51be-9c23-4507c32f920c)
+		(property
+			"Reference"
+			"F3"
+			(at 347.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Value"
+			"PTC >=30 V 1812"
+			(at 347.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property
+			"Footprint"
+			"Fuse:Fuse_1812_4532Metric"
+			(at 345.44 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 345.44 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 345.44 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"1812L050/30MR (à confirmer : Ihold@50°C >= 1,5 x I BA_ALIM)"
+			(at 345.44 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 4a84291e-7914-53dd-980f-8495c23ebf32)
+		)
+		(pin
+			"2"
+			(uuid 7345c0cb-51fb-5b9d-84fd-9f00ba475a1a)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 345.44 59.69)
+			(xy 345.44 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid cebe2227-9ca7-57dd-b1f8-d69890462c85)
+	)
+	(label
+		"+15V_SW3"
+		(at 345.44 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 8aa41dc2-d362-5eab-bb2b-bf5cbbca0ee5)
+	)
+	(wire
+		(pts
+			(xy 345.44 67.31)
+			(xy 345.44 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 2df814d8-0977-590c-9cd4-6220406ce3a2)
+	)
+	(label
+		"+15V_BA3"
+		(at 345.44 69.85 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 34997706-385d-54e2-bfb0-6dc83afb2cd1)
+	)
+	(symbol
+		(lib_id "Diode:SMAJ16A")
+		(at 345.44 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 18e67383-062f-5831-a708-383d4b683e50)
+		(property
+			"Reference"
+			"D3"
+			(at 345.44 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"SMAJ16A"
+			(at 345.44 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Diode_SMD:D_SMA"
+			(at 345.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 345.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Littelfuse"
+			(at 345.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"SMAJ16A"
+			(at 345.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 397b6ac2-4f94-5f7e-93a9-dbdcb960a457)
+		)
+		(pin
+			"2"
+			(uuid 99fbe8b9-8793-52ee-8f83-fcc8cfb60b25)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 341.63 88.9)
+			(xy 339.09 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 087501dd-a81d-5bb8-8b50-e7e844ec5acc)
+	)
+	(label
+		"+15V_BA3"
+		(at 339.09 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid c2e1946a-250d-5d70-bb10-a39174ac64de)
+	)
+	(wire
+		(pts
+			(xy 349.25 88.9)
+			(xy 351.79 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid ed081745-682a-5985-817b-4550cecfc811)
+	)
+	(label
+		"0V"
+		(at 351.79 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 3a4b47f0-55e3-5821-bf21-48e095881aae)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 304.8 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 96d98df1-08fd-5a6c-ae20-978c65f509d0)
+		(property
+			"Reference"
+			"J6"
+			(at 304.8 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA3 J1 (WR-MPC3 2x2)"
+			(at 304.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 304.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 304.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 304.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 304.8 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 7508bbbd-e1d2-5d82-a16d-503eaf70f4bb)
+		)
+		(pin
+			"3"
+			(uuid a2b3edd5-cd91-59ad-bbf4-245965992343)
+		)
+		(pin
+			"2"
+			(uuid 4addf668-76e9-56ef-bf17-fa8eb479b271)
+		)
+		(pin
+			"4"
+			(uuid f661bdb0-0990-5d92-abb7-59309a03e097)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 299.72 111.76)
+			(xy 297.18 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 75dfc412-b8ce-54b4-a704-5b4be24a3f72)
+	)
+	(label
+		"SDA_BA3"
+		(at 297.18 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 6d5a7f43-6948-5992-9f6e-ed2d174e1c23)
+	)
+	(wire
+		(pts
+			(xy 312.42 111.76)
+			(xy 314.96 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 41103549-3ed9-5bc5-b10b-e5b2c3d9a360)
+	)
+	(label
+		"SCL_BA3"
+		(at 314.96 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid a42c0b82-b3e3-511f-9f9f-946e02cde855)
+	)
+	(wire
+		(pts
+			(xy 299.72 114.3)
+			(xy 297.18 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid ee5374b4-b4d6-5c6c-8d28-33477edb87c8)
+	)
+	(label
+		"0V"
+		(at 297.18 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 1f0cd622-e7b6-5dff-b21e-e38bb59e3a92)
+	)
+	(wire
+		(pts
+			(xy 312.42 114.3)
+			(xy 314.96 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 25c85b2f-34a5-53e4-bdff-f6cface974bb)
+	)
+	(label
+		"+15V_BA3"
+		(at 314.96 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 234e8eb5-ca63-5743-bab7-2326f27a3a59)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 353.06 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid c4b9107e-7223-5ff3-9b69-821ff5b1a7c0)
+		(property
+			"Reference"
+			"J7"
+			(at 353.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Value"
+			"BA3 J2 (WR-MPC3 2x2)"
+			(at 353.06 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property
+			"Footprint"
+			"Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Datasheet"
+			""
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"Manufacturer"
+			"Würth Elektronik"
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property
+			"MPN"
+			"66200421122 (WR-MPC3 2x2, vertical, THT)"
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin
+			"1"
+			(uuid 9bd56504-dfcf-50b8-bab9-120b92dbaa55)
+		)
+		(pin
+			"3"
+			(uuid e8bb3382-9a77-53a6-bf69-633de64c09a4)
+		)
+		(pin
+			"2"
+			(uuid 08bacf35-a807-5e03-b4f7-d1595a7df3d9)
+		)
+		(pin
+			"4"
+			(uuid e160ac9e-316b-50d4-b7e7-ba67938d3010)
+		)
+		(instances
+			(project
+				"n2-etoile-0v"
+				(path
+					"/e8210b32-0ed0-5305-8c54-9be0e951fed1"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 347.98 111.76)
+			(xy 345.44 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid d274d5c6-be24-551b-88d2-f40ed5b9c070)
+	)
+	(label
+		"SDA_BA3"
+		(at 345.44 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid f1ec44ee-68a2-5cf7-8dea-01982f74d266)
+	)
+	(wire
+		(pts
+			(xy 360.68 111.76)
+			(xy 363.22 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 3333f713-4e49-5ae7-a70d-f8d203fc560b)
+	)
+	(label
+		"SCL_BA3"
+		(at 363.22 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid eb47c8f1-bff6-570f-814b-b12c22227492)
+	)
+	(wire
+		(pts
+			(xy 347.98 114.3)
+			(xy 345.44 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid adb7abc0-1c1a-5dcc-a51f-172961b455fa)
+	)
+	(label
+		"0V"
+		(at 345.44 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid 02cf492c-52d6-55fb-86ba-2ca050edcf1f)
+	)
+	(wire
+		(pts
+			(xy 360.68 114.3)
+			(xy 363.22 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 68f8a666-58b7-5512-8fa1-bd9a23b79dfc)
+	)
+	(label
+		"+15V_BA3"
+		(at 363.22 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid b787d357-3e58-5d26-88c1-de9daffb75e3)
+	)
+	(text
+		"N2 « étoile 0 V » – carte passive sur rail DIN (change OpenSpec i2c-surge-protection-2026-10-007, Refs #1)\nBus en étoile : SDA/SCL/+15 V/0 V du BP distribués vers chaque port BA. Par port : cavalier (SDA, SCL, +15 V), PTC puis TVS SMAJ16A sur le +15 V.\nLe 0 V n'est jamais coupé et n'est JAMAIS relié au PE. Plan 0 V double face, cuivre 2 oz."
+		(exclude_from_sim no)
+		(at 25.4 22.86 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid 4acd692e-4885-5795-a488-8bee12ec4f2f)
+	)
+	(sheet_instances
+		(path
+			"/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
