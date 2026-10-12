@@ -1,0 +1,58 @@
+{
+  "$schema": "./schema/feature.schema.json",
+  "id": "n2-esp32-spy-alarm-2026-10-008",
+  "title": "Module ESP32 sur la carte N2 : espion I2C, surveillance du bus, alarme et surtension",
+  "status": "proposed",
+  "owner": "nrineau",
+  "github": {
+    "issue": "essensys-hub/essensys-feature-lifecycle#28",
+    "project_item": "PVTI_lADODqt0Wc4BavHTzhAIgSw"
+  },
+  "git": { "branch": "feat/n2-esp32-spy-alarm-2026-10-008", "pr_url": null },
+  "openspec": {
+    "change_id": "n2-esp32-spy-alarm-2026-10-008",
+    "path": "openspec/changes/n2-esp32-spy-alarm-2026-10-008",
+    "proposal": "openspec/changes/n2-esp32-spy-alarm-2026-10-008/proposal.md",
+    "design": "openspec/changes/n2-esp32-spy-alarm-2026-10-008/design.md",
+    "tasks": "openspec/changes/n2-esp32-spy-alarm-2026-10-008/tasks.md",
+    "specs": [
+      "openspec/changes/n2-esp32-spy-alarm-2026-10-008/specs/i2c-passive-sniffer/spec.md",
+      "openspec/changes/n2-esp32-spy-alarm-2026-10-008/specs/bus-health-monitoring/spec.md",
+      "openspec/changes/n2-esp32-spy-alarm-2026-10-008/specs/intrusion-alarm/spec.md",
+      "openspec/changes/n2-esp32-spy-alarm-2026-10-008/specs/surge-event-logging/spec.md",
+      "openspec/changes/n2-esp32-spy-alarm-2026-10-008/specs/n2-power-backup/spec.md"
+    ]
+  },
+  "implementation": {
+    "paths": ["n2-etoile-0v.kicad_sch", "n2-etoile-0v.kicad_pcb", "README.md"],
+    "primary_surface": "ops"
+  },
+  "userguide": { "pages": ["README.md"], "language": "fr", "i18n_keys": [], "screenshots": [] },
+  "tests": {
+    "playwright": [],
+    "coverage_must_test": [
+      "NR-board-sc944d-1 niveaux I2C a 50 kHz inchanges avec module alimente ou non",
+      "NR-board-sc944d-2 retrait d'un BA detecte (BA muet)",
+      "NR-board-sc944d-3 ligne SDA ou SCL forcee basse detectee",
+      "NR-i2c-etoile-0v-1 aucune emission possible sur le bus",
+      "NR-i2c-etoile-0v-2 redemarrage du module sans erreur de bus"
+    ],
+    "smoke_tags": ["@nr"]
+  },
+  "release": {
+    "changelog_entry": "Carte N2 : module ESP32 espion I2C passif, surveillance du bus et du +15 V, alarme intrusion sur batterie, journal des surtensions, publication MQTT.",
+    "target_tag": null,
+    "surfaces": ["essensys-i2c-etoile-0v", "essensys-board-SC944D", "essensys-doc"],
+    "paths": ["openspec/changes/n2-esp32-spy-alarm-2026-10-008/design.md"]
+  },
+  "security": {
+    "sca_tool": "dependabot",
+    "dependabot_alerts_url": null,
+    "last_scan_at": null,
+    "cve_findings": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+    "secret_scan": { "status": "clean", "tool": "gitleaks", "last_scan_at": null },
+    "muted_findings": [],
+    "threat_model_url": "openspec/changes/n2-esp32-spy-alarm-2026-10-008/design.md",
+    "owner_security": "nrineau"
+  }
+}

@@ -1,0 +1,17 @@
+schema: spec-driven
+
+context: |
+  Language: fr
+  All artifacts must be written in fr.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  Essensys — carte N2 « étoile 0 V » (KiCad) : carte d'interconnexion équipotentielle du bus I2C
+  entre le Boîtier Principal SC944D (maître I2C, ColdFire MCF52259) et les boîtiers auxiliaires
+  SC940D / SC941C / SC942C (PIC16F946). Bus I2C 50 kHz, niveaux 5 V, câble 4 fils (SDA, SCL, 0 V, +15 V),
+  +15 V protégé par PTC par départ (≥ 1,5 × BA_ALIM). Change parent : i2c-surge-protection-2026-10-007
+  (essensys-hub/essensys-board-SC944D#1).
+  TBTS : le 0 V n'est JAMAIS relié au PE. Dépôt PUBLIC : aucune donnée privée (adresse, numéro de série,
+  IP, identifiants Wi-Fi/MQTT, installateur) dans les artefacts. Protocole HTTP legacy IoT inchangé.
+  Gouvernance : essensys-feature-lifecycle/claude/GOVERNANCE.md (ticket GitHub Project #6, OpenSpec,
+  /checkup, tests NR-*, essais sur banc uniquement, jamais d'armoire réelle en test). Conventional commits
+  référençant l'issue. Français.
