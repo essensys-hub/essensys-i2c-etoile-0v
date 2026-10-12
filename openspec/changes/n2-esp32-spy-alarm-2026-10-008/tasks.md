@@ -42,4 +42,4 @@
 
 ## 9. Documentation (#9)
 - [x] 9.1 Mettre à jour le README (architecture, câblage, budget, sécurité, sans donnée privée) ; vérifier le grep de confidentialité vide
-- [ ] 9.2 Documenter le module dans essensys-doc (installation, alarme, MQTT) ; vérifier la PR liée au ticket #28
+- [x] 9.2 Documenter le module dans essensys-doc (installation, alarme, MQTT) ; vérifier la PR liée au ticket #28 PR : essensys-hub/essensys-doc#5.
