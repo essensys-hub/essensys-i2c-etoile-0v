@@ -1,0 +1,33 @@
+# Profil « release » (production), à combiner avec sdkconfig.defaults :
+#   idf.py -B build-release -D SDKCONFIG=build-release/sdkconfig \
+#          -D SDKCONFIG_DEFAULTS="sdkconfig.defaults;sdkconfig.defaults.release" build
+#
+# ATTENTION : le premier démarrage d'une image release grave des eFuses de façon
+# IRRÉVERSIBLE (empreinte de la clé Secure Boot, clé de chiffrement flash,
+# désactivation JTAG et du téléchargement ROM non sécurisé). Procédure dans
+# firmware/README.md. Jamais sur une carte de banc à reprogrammer.
+
+# --- Secure Boot V2 (RSA-3072) ---
+# CONFIG_SECURE_SIGNED_APPS_NO_SECURE_BOOT is not set
+CONFIG_SECURE_BOOT=y
+CONFIG_SECURE_BOOT_V2_ENABLED=y
+CONFIG_SECURE_SIGNED_APPS_RSA_SCHEME=y
+# Signature hors du dépôt et hors CI (clé sur poste hors ligne / HSM) :
+# CONFIG_SECURE_BOOT_BUILD_SIGNED_BINARIES is not set
+# CONFIG_SECURE_BOOT_ENABLE_AGGRESSIVE_KEY_REVOKE is not set
+
+# --- Chiffrement flash, mode Release ---
+CONFIG_SECURE_FLASH_ENC_ENABLED=y
+CONFIG_SECURE_FLASH_ENCRYPTION_MODE_RELEASE=y
+CONFIG_SECURE_ENABLE_SECURE_ROM_DL_MODE=y
+
+# --- NVS chiffrée (identifiants MQTT/Wi-Fi, clé de commande) ---
+CONFIG_NVS_ENCRYPTION=y
+
+# --- Anti-retour arrière des images ---
+CONFIG_BOOTLOADER_APP_ANTI_ROLLBACK=y
+CONFIG_BOOTLOADER_APP_SECURE_VERSION=1
+
+# --- Journaux réduits ---
+CONFIG_BOOTLOADER_LOG_LEVEL_WARN=y
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y

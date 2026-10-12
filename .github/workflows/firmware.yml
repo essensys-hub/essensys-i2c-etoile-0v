@@ -1,0 +1,74 @@
+# Firmware du module ESP32-C3 de la carte N2 (change n2-esp32-spy-alarm-2026-10-008).
+# Tests hôtes + contrôles de revue, puis build ESP-IDF (version figée) des profils dev et release.
+name: firmware
+
+on:
+  push:
+    paths:
+      - "firmware/**"
+      - ".github/workflows/firmware.yml"
+  pull_request:
+    paths:
+      - "firmware/**"
+      - ".github/workflows/firmware.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: firmware-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  ESP_IDF_VERSION: v5.3.2
+  IDF_TARGET: esp32c3
+
+jobs:
+  host-tests:
+    name: Tests hôtes
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Construire et exécuter les tests hôtes
+        run: |
+          cmake -S firmware/test -B build-host -DCMAKE_C_COMPILER=gcc
+          cmake --build build-host -j"$(nproc)"
+          ctest --test-dir build-host --output-on-failure
+
+  esp-idf:
+    name: Build ESP-IDF (${{ matrix.profile }})
+    needs: host-tests
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - profile: dev
+            defaults: sdkconfig.defaults
+          - profile: release
+            defaults: sdkconfig.defaults;sdkconfig.defaults.release
+    steps:
+      - uses: actions/checkout@v4
+      - name: idf.py build
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: ${{ env.ESP_IDF_VERSION }}
+          target: ${{ env.IDF_TARGET }}
+          path: firmware
+          command: >-
+            idf.py -B build-${{ matrix.profile }}
+            -D SDKCONFIG=build-${{ matrix.profile }}/sdkconfig
+            -D SDKCONFIG_DEFAULTS="${{ matrix.defaults }}"
+            build
+      - name: Vérifier les options de sécurité effectives
+        run: |
+          cfg=firmware/build-${{ matrix.profile }}/sdkconfig
+          grep -q '^CONFIG_SECURE_SIGNED_ON_UPDATE=y' "$cfg" || grep -q '^CONFIG_SECURE_SIGNED_ON_UPDATE_NO_SECURE_BOOT=y' "$cfg" \
+            || { echo "verification de signature OTA inactive"; exit 1; }
+          if [ "${{ matrix.profile }}" = release ]; then
+            for opt in CONFIG_SECURE_BOOT_V2_ENABLED CONFIG_SECURE_FLASH_ENC_ENABLED CONFIG_SECURE_FLASH_ENCRYPTION_MODE_RELEASE CONFIG_NVS_ENCRYPTION; do
+              grep -q "^$opt=y" "$cfg" || { echo "$opt absent du profil release"; exit 1; }
+            done
+          fi
+          ls -l firmware/build-${{ matrix.profile }}/*.bin
