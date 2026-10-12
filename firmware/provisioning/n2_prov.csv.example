@@ -1,0 +1,13 @@
+key,type,encoding,value
+n2prov,namespace,,
+dev_id,data,string,n2-exemple-01
+wifi_ssid,data,string,A_RENSEIGNER
+wifi_pass,data,string,A_RENSEIGNER
+mqtt_uri,data,string,mqtts://broker.example.invalid:8883
+mqtt_user,data,string,A_RENSEIGNER
+mqtt_pass,data,string,A_RENSEIGNER
+mqtt_ca,file,string,secrets/mqtt_ca.pem
+ota_ca,file,string,secrets/ota_ca.pem
+ota_prefix,data,string,https://ota.example.invalid/n2/
+cmd_key,data,hex2bin,0000000000000000000000000000000000000000000000000000000000000000
+zone_types,data,hex2bin,02010101

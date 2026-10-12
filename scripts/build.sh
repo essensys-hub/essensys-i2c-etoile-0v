@@ -1,18 +1,19 @@
 #!/bin/sh
-# Régénère schéma, PCB, contrôles et exports. Usage : sh scripts/build.sh (depuis n'importe où)
+# Régénère schéma, PCB (placement + routage automatique du module, ~5 min), contrôles et exports.
+# Usage : sh scripts/build.sh (depuis n'importe où)
 set -e
 cd "$(dirname "$0")/.."
 KC=/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
 KP=/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.9/bin/python3
 N=n2-etoile-0v
 python3 scripts/gen_sch.py .
-$KP scripts/gen_pcb.py .
+$KP -u scripts/gen_pcb.py .
 $KP scripts/fill_zones.py $N.kicad_pcb
 mkdir -p rapports export/gerber
 $KC sch erc --severity-all -o rapports/erc.rpt $N.kicad_sch
 $KC pcb drc --severity-all --schematic-parity -o rapports/drc.rpt $N.kicad_pcb
 $KC sch export pdf -o export/$N-schema.pdf $N.kicad_sch
-$KC sch export bom --fields 'Reference,Value,Footprint,Manufacturer,MPN,${QUANTITY}' --labels 'Repère,Valeur,Empreinte,Fabricant,Référence,Qté' --group-by 'Value,Footprint,MPN' --exclude-dnp -o export/$N-bom.csv $N.kicad_sch
+$KC sch export bom --fields 'Reference,Value,Footprint,Manufacturer,MPN,Tolerance,${QUANTITY}' --labels 'Repère,Valeur,Empreinte,Fabricant,Référence,Tolérance,Qté' --group-by 'Value,Footprint,MPN,Tolerance' --exclude-dnp -o export/$N-bom.csv $N.kicad_sch
 rm -rf export/gerber/*
 $KC pcb export gerbers --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts -o export/gerber/ $N.kicad_pcb
 $KC pcb export drill --generate-map --map-format pdf -o export/gerber/ $N.kicad_pcb

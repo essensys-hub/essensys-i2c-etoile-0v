@@ -1,0 +1,52 @@
+menu "Essensys carte N2"
+
+    config N2_BA_MUTE_TIMEOUT_MS
+        int "Délai avant alerte « BA muet » (ms)"
+        range 1000 600000
+        default 10000
+
+    config N2_LINE_STUCK_MS
+        int "Durée d'une ligne SDA/SCL basse avant alerte (ms)"
+        range 20 10000
+        default 100
+
+    config N2_V15_LOW_MV
+        int "Seuil de chute du +15 V (mV)"
+        range 8000 15000
+        default 13000
+
+    config N2_ZERO_V_GAP_MV
+        int "Seuil d'écart entre 0 V des départs (mV)"
+        range 50 2400
+        default 500
+
+    config N2_SIREN_MAX_S
+        int "Durée maximale de la sirène (s)"
+        range 10 900
+        default 180
+
+    config N2_EXIT_DELAY_S
+        int "Temporisation de sortie (s)"
+        range 0 300
+        default 30
+
+    config N2_ENTRY_DELAY_S
+        int "Temporisation d'entrée (s)"
+        range 0 300
+        default 30
+
+    config N2_DEBUG_DEFAULT_TTL_S
+        int "Durée par défaut du mode debug (s)"
+        range 60 86400
+        default 3600
+
+    config N2_EVLOG_CAPACITY
+        int "Capacité du journal d'événements non volatil"
+        range 32 512
+        default 256
+
+    config N2_NTP_SERVER
+        string "Serveur NTP"
+        default "pool.ntp.org"
+
+endmenu

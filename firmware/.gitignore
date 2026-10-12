@@ -1,0 +1,17 @@
+# Builds ESP-IDF et tests hôtes
+build/
+build-*/
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# Provisionnement et secrets : JAMAIS dans le dépôt (public)
+provisioning/*
+!provisioning/*.example
+secrets/
+*.pem
+*.key
+*.der
+*.p12
+*.bin
