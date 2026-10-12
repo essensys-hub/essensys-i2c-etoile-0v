@@ -3,18 +3,18 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.7"
+      "Version": "10.0.7"
     },
-    "CreationDate": "2026-10-12T09:32:21+02:00"
+    "CreationDate": "2026-10-12T12:33:19+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "n2-etoile-0v",
       "GUID": "6e322d65-746f-4696-9c65-2d30762e6b69",
-      "Revision": "A"
+      "Revision": "B"
     },
     "Size": {
-      "X": 110.1,
+      "X": 235.1,
       "Y": 68.1
     },
     "LayerNumber": 2,
@@ -27,7 +27,7 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.5,
+      "MinLineWidth": 0.25,
       "TrackToRegion": 0.4,
       "RegionToRegion": 0.4
     }
